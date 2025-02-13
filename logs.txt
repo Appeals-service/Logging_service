@@ -1,0 +1,1 @@
+2025-02-13 17:37:37.604665 - Appeals service - INFO - Appeal created. Appeal id = 62. User id = 23639386-7e0e-415c-ba25-4f6dda32f944
