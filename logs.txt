@@ -1,1 +1,9 @@
 2025-02-13 17:37:37.604665 - Appeals service - INFO - Appeal created. Appeal id = 62. User id = 23639386-7e0e-415c-ba25-4f6dda32f944
+2025-02-13 18:30:18.257215 - Appeals service - INFO - The user is registered. User login = Sunny_Johnny1. User role = user
+2025-02-13 18:35:25.548597 - Appeals service - INFO - The user is registered. User login = 333. User role = user
+2025-02-13 18:37:01.126627 - Appeals service - INFO - The user is logged in. User = 333
+2025-02-13 18:37:53.761717 - Appeals service - INFO - Appeal created. Appeal id = 63. User id = d103bcb5-eddb-4707-a1ea-509efd11413b
+2025-02-13 18:40:33.009046 - Appeals service - INFO - Appeal updated by user. Appeal id = 63. User id = d103bcb5-eddb-4707-a1ea-509efd11413b
+2025-02-13 18:41:46.412622 - Appeals service - INFO - The user is logged in. User = 321
+2025-02-13 18:43:02.366998 - Appeals service - INFO - Appeal is assigned to the executor. Appeal id = 63. User id = a2d6ee96-5314-441f-93aa-1945aadd424f
+2025-02-13 18:44:44.849557 - Appeals service - INFO - Appeal updated by executor. Appeal id = 63. Executor id = a2d6ee96-5314-441f-93aa-1945aadd424f

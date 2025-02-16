@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+
+  logging_service:
+    container_name: logging_service
+    build: .
+    env_file:
+      - ./.env
+
+
+
+

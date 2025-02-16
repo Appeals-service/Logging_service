@@ -6,7 +6,7 @@ from aio_pika.abc import AbstractIncomingMessage
 from aio_pika.exceptions import ChannelPreconditionFailed
 from aiofiles import open
 
-from src.settings import settings
+from settings import settings
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(format=settings.LOGGING_FORMAT)
@@ -17,7 +17,7 @@ async def process_message(message: AbstractIncomingMessage) -> None:
     logger.info("Message received")
     async with message.process():
         async with open("../logs.txt", "a", encoding="utf-8") as file:
-            await file.write(message.body.decode())
+            await file.write(f"\n{message.body.decode()}")
 
 
 async def main() -> None:
@@ -32,11 +32,6 @@ async def main() -> None:
     try:
         await asyncio.Future()
     finally:
-        try:
-            await queue.delete()
-        except ChannelPreconditionFailed:
-            pass
-
         await connection.close()
 
 
