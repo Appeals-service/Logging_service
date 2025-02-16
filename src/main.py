@@ -16,7 +16,7 @@ logger.setLevel(settings.LOGGING_LEVEL)
 async def process_message(message: AbstractIncomingMessage) -> None:
     logger.info("Message received")
     async with message.process():
-        async with open("../logs.txt", "a", encoding="utf-8") as file:
+        async with open("./logs.txt", "a", encoding="utf-8") as file:
             await file.write(f"\n{message.body.decode()}")
 
 
