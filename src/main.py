@@ -3,7 +3,6 @@ import logging
 
 from aio_pika import connect_robust
 from aio_pika.abc import AbstractIncomingMessage
-from aio_pika.exceptions import ChannelPreconditionFailed
 from aiofiles import open
 
 from settings import settings
